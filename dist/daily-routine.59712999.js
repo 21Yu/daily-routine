@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"c60O6":[function(require,module,exports) {
+})({"1v14V":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "11eefaaee5ac7667";
+module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,14 +583,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"aitAD":[function(require,module,exports) {
-const button = document.getElementById("mybtn");
-const newContent = document.getElementById("new");
-function changeContent() {
-    newContent.innerHTML = "<p>new element!</p>";
-}
-button.addEventListener("click", changeContent);
+},{}],"4M6V8":[function(require,module,exports) {
 
-},{}]},["c60O6","aitAD"], "aitAD", "parcelRequirea631")
+},{}]},["1v14V","4M6V8"], "4M6V8", "parcelRequirea631")
 
-//# sourceMappingURL=index.e5ac7667.js.map
+//# sourceMappingURL=daily-routine.59712999.js.map
