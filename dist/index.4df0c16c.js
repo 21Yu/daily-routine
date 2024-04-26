@@ -5,6 +5,7 @@ google.charts.load("current", {
     ]
 });
 function drawLoaferChart() {
+    document.getElementById("chartContainer").innerHTML = "";
     const data = google.visualization.arrayToDataTable([
         [
             "Task",
@@ -30,10 +31,11 @@ function drawLoaferChart() {
     const options = {
         title: "loafer"
     };
-    const chart = new google.visualization.PieChart(document.getElementById("loaferChart"));
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
     chart.draw(data, options);
 }
 function drawSlaveChart() {
+    document.getElementById("chartContainer").innerHTML = "";
     const data = google.visualization.arrayToDataTable([
         [
             "Task",
@@ -59,10 +61,11 @@ function drawSlaveChart() {
     const options = {
         title: "slave"
     };
-    const chart = new google.visualization.PieChart(document.getElementById("slaveChart"));
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
     chart.draw(data, options);
 }
 function drawRetireChart() {
+    document.getElementById("chartContainer").innerHTML = "";
     const data = google.visualization.arrayToDataTable([
         [
             "Task",
@@ -92,10 +95,11 @@ function drawRetireChart() {
     const options = {
         title: "retire"
     };
-    const chart = new google.visualization.PieChart(document.getElementById("retireChart"));
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
     chart.draw(data, options);
 }
 function drawBillionaireChart() {
+    document.getElementById("chartContainer").innerHTML = "";
     const data = google.visualization.arrayToDataTable([
         [
             "Task",
@@ -129,24 +133,15 @@ function drawBillionaireChart() {
     const options = {
         title: "billionaire"
     };
-    const chart = new google.visualization.PieChart(document.getElementById("billionaireChart"));
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
     chart.draw(data, options);
 }
 function selectOne() {
     const selectedOption = document.getElementById("options").value;
-    if (selectedOption == 1) {
-        console.log("generate loafer chart");
-        google.charts.setOnLoadCallback(drawLoaferChart);
-    } else if (selectedOption == 2) {
-        console.log("generate slave chart");
-        google.charts.setOnLoadCallback(drawSlaveChart);
-    } else if (selectedOption == 3) {
-        console.log("generate retire chart");
-        google.charts.setOnLoadCallback(drawRetireChart);
-    } else {
-        console.log("generate billionaire chart");
-        google.charts.setOnLoadCallback(drawBillionaireChart);
-    }
+    if (selectedOption == 1) google.charts.setOnLoadCallback(drawLoaferChart);
+    else if (selectedOption == 2) google.charts.setOnLoadCallback(drawSlaveChart);
+    else if (selectedOption == 3) google.charts.setOnLoadCallback(drawRetireChart);
+    else google.charts.setOnLoadCallback(drawBillionaireChart);
 }
 const myButton = document.getElementById("mybtn");
 myButton.addEventListener("click", selectOne);

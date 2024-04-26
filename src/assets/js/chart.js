@@ -2,6 +2,9 @@
 google.charts.load('current', {packages: ['corechart']});
 
 function drawLoaferChart() {
+    
+    document.getElementById('chartContainer').innerHTML = "";
+
     const data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per day'],
         ['Eat', 2],
@@ -14,12 +17,15 @@ function drawLoaferChart() {
         title: 'loafer'
     };
 
-    const chart = new google.visualization.PieChart(document.getElementById('loaferChart'));
+    const chart = new google.visualization.PieChart(document.getElementById('chartContainer'));
 
     chart.draw(data, options);
 } 
 
 function drawSlaveChart() {
+
+    document.getElementById('chartContainer').innerHTML = "";
+
     const data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per Day'],
         ['Work', 12],
@@ -32,12 +38,15 @@ function drawSlaveChart() {
         title: 'slave'
     };
 
-    const chart = new google.visualization.PieChart(document.getElementById('slaveChart'));
+    const chart = new google.visualization.PieChart(document.getElementById('chartContainer'));
 
     chart.draw(data, options);
 }
 
 function drawRetireChart() {
+
+    document.getElementById('chartContainer').innerHTML = "";
+
     const data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per Day'],
         ['Investing', 5],
@@ -51,12 +60,15 @@ function drawRetireChart() {
         title: 'retire'
     };
 
-    const chart = new google.visualization.PieChart(document.getElementById('retireChart'));
+    const chart = new google.visualization.PieChart(document.getElementById('chartContainer'));
 
     chart.draw(data, options);
 }
 
 function drawBillionaireChart() {
+   
+    document.getElementById('chartContainer').innerHTML = "";
+
     const data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per Day'],
         ['Sleep', 9],
@@ -71,7 +83,7 @@ function drawBillionaireChart() {
         title: 'billionaire'
     };
 
-    const chart = new google.visualization.PieChart(document.getElementById('billionaireChart'));
+    const chart = new google.visualization.PieChart(document.getElementById('chartContainer'));
 
     chart.draw(data, options);
 }
@@ -79,16 +91,12 @@ function drawBillionaireChart() {
 function selectOne() {
     const selectedOption = document.getElementById('options').value;
     if (selectedOption == 1) {
-        console.log("generate loafer chart");
         google.charts.setOnLoadCallback(drawLoaferChart);
     } else if (selectedOption == 2) {
-        console.log("generate slave chart");
         google.charts.setOnLoadCallback(drawSlaveChart);
     } else if (selectedOption == 3) {
-        console.log("generate retire chart");
         google.charts.setOnLoadCallback(drawRetireChart);
     } else {
-        console.log("generate billionaire chart");
         google.charts.setOnLoadCallback(drawBillionaireChart);
     }
 }
