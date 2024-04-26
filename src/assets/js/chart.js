@@ -1,9 +1,5 @@
 // load google chart
 google.charts.load('current', {packages: ['corechart']});
-google.charts.setOnLoadCallback(drawLoaferChart);
-google.charts.setOnLoadCallback(drawSlaveChart);
-google.charts.setOnLoadCallback(drawRetireChart);
-google.charts.setOnLoadCallback(drawBillionaireChart);
 
 function drawLoaferChart() {
     const data = google.visualization.arrayToDataTable([
@@ -79,3 +75,23 @@ function drawBillionaireChart() {
 
     chart.draw(data, options);
 }
+
+function selectOne() {
+    const selectedOption = document.getElementById('options').value;
+    if (selectedOption == 1) {
+        console.log("generate loafer chart");
+        google.charts.setOnLoadCallback(drawLoaferChart);
+    } else if (selectedOption == 2) {
+        console.log("generate slave chart");
+        google.charts.setOnLoadCallback(drawSlaveChart);
+    } else if (selectedOption == 3) {
+        console.log("generate retire chart");
+        google.charts.setOnLoadCallback(drawRetireChart);
+    } else {
+        console.log("generate billionaire chart");
+        google.charts.setOnLoadCallback(drawBillionaireChart);
+    }
+}
+
+const myButton = document.getElementById('mybtn');
+myButton.addEventListener('click', selectOne);

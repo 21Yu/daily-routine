@@ -584,12 +584,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"aitAD":[function(require,module,exports) {
-const button = document.getElementById("mybtn");
-const newContent = document.getElementById("new");
-function changeContent() {
-    newContent.innerHTML = "<p>new element!</p>";
-}
-button.addEventListener("click", changeContent);
 
 },{}]},["c60O6","aitAD"], "aitAD", "parcelRequirea631")
 

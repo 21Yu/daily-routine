@@ -40,7 +40,7 @@
 61C:\Users\12yub\repos\daily-routine\node_modules\source-map-js133572758155231331 1
 83C:\Users\12yub\repos\daily-routine\node_modules\@parcel\utils\src\parseCSSImport.js133572758166216784 0
 70C:\Users\12yub\repos\daily-routine\node_modules\path-type\package.json133572758139204895 0
-39C:\Users\12yub\repos\daily-routine\dist133585877088789453 1
+39C:\Users\12yub\repos\daily-routine\dist133586278696013692 1
 100C:\Users\12yub\repos\daily-routine\node_modules\csso\node_modules\css-tree\lib\syntax\node\Number.js133572758174880035 0
 52C:\Users\12yub\repos\daily-routine\node_modules\csso133572758169857932 1
 100C:\Users\12yub\repos\daily-routine\node_modules\css-select\node_modules\domutils\lib\esm\querying.js133572758151002064 0
@@ -100,7 +100,7 @@
 72C:\Users\12yub\repos\daily-routine\node_modules\css-what\lib\es\parse.js133572758146913262 0
 97C:\Users\12yub\repos\daily-routine\node_modules\csso\node_modules\css-tree\lib\tokenizer\index.js133572758174393169 0
 73C:\Users\12yub\repos\daily-routine\node_modules\posthtml-render\readme.md133572758142984347 0
-49C:\Users\12yub\repos\daily-routine\src\index.html133585876258331966 0
+49C:\Users\12yub\repos\daily-routine\src\index.html133586262289057538 0
 71C:\Users\12yub\repos\daily-routine\node_modules\braces\lib\stringify.js133572758152241770 0
 87C:\Users\12yub\repos\daily-routine\node_modules\bootstrap\js\dist\util\focustrap.js.map133572741082978323 0
 90C:\Users\12yub\repos\daily-routine\node_modules\caniuse-lite\data\features\css3-cursors.js133572758175783589 0
@@ -132,7 +132,7 @@
 60C:\Users\12yub\repos\daily-routine\node_modules\sass\LICENSE133572763438273021 0
 76C:\Users\12yub\repos\daily-routine\node_modules\css-tree\lib\parser\index.js133572758174413268 0
 80C:\Users\12yub\repos\daily-routine\node_modules\msgpackr\dist\unpack-no-eval.cjs133572758153241342 0
-57C:\Users\12yub\repos\daily-routine\src\assets\js\chart.js133585877088429627 0
+57C:\Users\12yub\repos\daily-routine\src\assets\js\chart.js133586278695755230 0
 101C:\Users\12yub\repos\daily-routine\node_modules\css-select\node_modules\dom-serializer\lib\index.d.ts133572758152834343 0
 72C:\Users\12yub\repos\daily-routine\node_modules\semver\ranges\outside.js133572758157986944 0
 78C:\Users\12yub\repos\daily-routine\node_modules\nth-check\lib\compile.d.ts.map133572758151512305 0
@@ -143,7 +143,7 @@
 73C:\Users\12yub\repos\daily-routine\node_modules\css-tree\dist\version.cjs133572758171751942 0
 76C:\Users\12yub\repos\daily-routine\node_modules\@swc\helpers\_\_create_super133572758175297659 1
 94C:\Users\12yub\repos\daily-routine\node_modules\css-select\node_modules\domhandler\lib\node.js133572758144676624 0
-56C:\Users\12yub\repos\daily-routine\src\assets\js\main.js133585835624101890 0
+56C:\Users\12yub\repos\daily-routine\src\assets\js\main.js133586271927867892 0
 76C:\Users\12yub\repos\daily-routine\node_modules\csso\cjs\restructure\prepare133572758160872584 1
 66C:\Users\12yub\repos\daily-routine\node_modules\path-type\index.js133572758142579593 0
 76C:\Users\12yub\repos\daily-routine\node_modules\timsort\build\timsort.min.js133572758149133780 0
@@ -5769,7 +5769,7 @@
 119C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules\foo\index.js133572758152364647 0
 104C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\test\fixtures\empty\package.json133572758161462424 0
 103C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\src\getCurrentPackageManager.js133572758137598266 0
-62C:\Users\12yub\repos\daily-routine\dist\index.4717fcfd.css.map133585853415809532 0
+62C:\Users\12yub\repos\daily-routine\dist\index.4717fcfd.css.map133586253896401437 0
 94C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\src\JSONParseStream.js133572758157538581 0
 97C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\src\NodePackageManager.js133572758158267516 0
 83C:\Users\12yub\repos\daily-routine\node_modules\@parcel\package-manager\src\Pnpm.js133572758159244032 0
@@ -6492,9 +6492,9 @@
 61C:\Users\12yub\repos\daily-routine\node_modules\.bin\svgo.cmd133572758321780224 0
 79C:\Users\12yub\repos\daily-routine\node_modules\.bin\update-browserslist-db.cmd133572758321756935 0
 65C:\Users\12yub\repos\daily-routine\dist\daily-routine.59712999.js133585845943650166 0
-58C:\Users\12yub\repos\daily-routine\dist\index.4717fcfd.css133585853415719213 0
-57C:\Users\12yub\repos\daily-routine\dist\index.4df0c16c.js133585877088678255 0
-61C:\Users\12yub\repos\daily-routine\dist\index.4df0c16c.js.map133585877088779446 0
-57C:\Users\12yub\repos\daily-routine\dist\index.e5ac7667.js133585853415300187 0
-61C:\Users\12yub\repos\daily-routine\dist\index.e5ac7667.js.map133585853415378959 0
-50C:\Users\12yub\repos\daily-routine\dist\index.html133585876259343280 0
+58C:\Users\12yub\repos\daily-routine\dist\index.4717fcfd.css133586253896371591 0
+50C:\Users\12yub\repos\daily-routine\dist\index.html133586262290742438 0
+57C:\Users\12yub\repos\daily-routine\dist\index.e5ac7667.js133586271928128528 0
+61C:\Users\12yub\repos\daily-routine\dist\index.e5ac7667.js.map133586271928168617 0
+57C:\Users\12yub\repos\daily-routine\dist\index.4df0c16c.js133586278695983615 0
+61C:\Users\12yub\repos\daily-routine\dist\index.4df0c16c.js.map133586278696013692 0
