@@ -584,6 +584,192 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"aitAD":[function(require,module,exports) {
+var _chart = require("./chart");
+// load google chart
+google.charts.load("current", {
+    packages: [
+        "corechart"
+    ]
+});
+function selectOne() {
+    const selectedOption = document.getElementById("options").value;
+    if (selectedOption == 1) google.charts.setOnLoadCallback((0, _chart.drawLoaferChart));
+    else if (selectedOption == 2) google.charts.setOnLoadCallback((0, _chart.drawSlaveChart));
+    else if (selectedOption == 3) google.charts.setOnLoadCallback((0, _chart.drawRetireChart));
+    else google.charts.setOnLoadCallback((0, _chart.drawBillionaireChart));
+}
+const myButton = document.getElementById("mybtn");
+myButton.addEventListener("click", selectOne);
+
+},{"./chart":"bZ9iX"}],"bZ9iX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "drawLoaferChart", ()=>drawLoaferChart);
+parcelHelpers.export(exports, "drawSlaveChart", ()=>drawSlaveChart);
+parcelHelpers.export(exports, "drawRetireChart", ()=>drawRetireChart);
+parcelHelpers.export(exports, "drawBillionaireChart", ()=>drawBillionaireChart);
+function drawLoaferChart() {
+    document.getElementById("chartContainer").innerHTML = "";
+    const data = google.visualization.arrayToDataTable([
+        [
+            "Task",
+            "Hours per day"
+        ],
+        [
+            "Eat",
+            2
+        ],
+        [
+            "gaming",
+            4
+        ],
+        [
+            "scrolling",
+            6
+        ],
+        [
+            "Sleep",
+            12
+        ]
+    ]);
+    const options = {
+        title: "loafer"
+    };
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
+    chart.draw(data, options);
+}
+function drawSlaveChart() {
+    document.getElementById("chartContainer").innerHTML = "";
+    const data = google.visualization.arrayToDataTable([
+        [
+            "Task",
+            "Hours per Day"
+        ],
+        [
+            "Work",
+            12
+        ],
+        [
+            "Eat",
+            3
+        ],
+        [
+            "Sleep",
+            7
+        ],
+        [
+            "commute",
+            2
+        ]
+    ]);
+    const options = {
+        title: "slave"
+    };
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
+    chart.draw(data, options);
+}
+function drawRetireChart() {
+    document.getElementById("chartContainer").innerHTML = "";
+    const data = google.visualization.arrayToDataTable([
+        [
+            "Task",
+            "Hours per Day"
+        ],
+        [
+            "Investing",
+            5
+        ],
+        [
+            "Sleep",
+            9
+        ],
+        [
+            "Hobby",
+            4
+        ],
+        [
+            "Eat",
+            2
+        ],
+        [
+            "Teach kids",
+            4
+        ]
+    ]);
+    const options = {
+        title: "retire"
+    };
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
+    chart.draw(data, options);
+}
+function drawBillionaireChart() {
+    document.getElementById("chartContainer").innerHTML = "";
+    const data = google.visualization.arrayToDataTable([
+        [
+            "Task",
+            "Hours per Day"
+        ],
+        [
+            "Sleep",
+            9
+        ],
+        [
+            "Investing",
+            6
+        ],
+        [
+            "Shopping",
+            2
+        ],
+        [
+            "Eating",
+            2
+        ],
+        [
+            "Networking",
+            3
+        ],
+        [
+            "reading",
+            2
+        ]
+    ]);
+    const options = {
+        title: "billionaire"
+    };
+    const chart = new google.visualization.PieChart(document.getElementById("chartContainer"));
+    chart.draw(data, options);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["c60O6","aitAD"], "aitAD", "parcelRequirea631")
 
